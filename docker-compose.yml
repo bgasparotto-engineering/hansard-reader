@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: "postgres:9.6"
+    environment:
+      - POSTGRES_DB=hansard_reader
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
