@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class ExecuteReadConsumer {
+public class RunUpdateConsumer {
 
     @KafkaListener(topics = "message.scheduler.run-hansard-update")
     public void consume(ConsumerRecord<String, RunUpdate> record) {
