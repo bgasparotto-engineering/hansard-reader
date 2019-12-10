@@ -5,6 +5,8 @@ spring:
     url: jdbc:postgresql://localhost:5432/hansard_reader
     username: postgres
     password: password
+  flyway:
+    enabled: false
   jpa:
     hibernate:
       ddl-auto: validate
