@@ -4,15 +4,14 @@ import lombok.Data;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.time.Instant;
 
 @Data
-@XmlRootElement(name = "entry")
+@XmlRootElement(name = "link")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class HansardEntry {
-    private String id;
-    private String title;
-    private Instant updated;
-    private HansardResourceLink link;
+public class HansardResourceLink {
+
+    @XmlAttribute(name = "href")
+    private String uri;
 }
