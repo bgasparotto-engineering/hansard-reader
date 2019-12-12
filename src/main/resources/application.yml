@@ -1,5 +1,18 @@
 server:
   port: 10000
+
+topics:
+  input:
+    run-hansard-update: message.scheduler.run-hansard-update
+
+external-api:
+  hansard:
+    uri: http://api.data.parliament.uk
+    feed:
+      path: /resources/files/feed
+      dataset: 12
+      take: all
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/hansard_reader
