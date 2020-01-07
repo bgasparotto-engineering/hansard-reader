@@ -5,6 +5,10 @@
       "type": "java.lang.String"
     },
     {
+      "name": "topics.output.downloadable-file",
+      "type": "java.lang.String"
+    },
+    {
       "name": "external-api.hansard.uri",
       "type": "java.lang.String"
     },

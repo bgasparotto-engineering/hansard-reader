@@ -4,6 +4,8 @@ server:
 topics:
   input:
     run-hansard-update: message.scheduler.run-hansard-update
+  output:
+    downloadable-file: message.hansard-reader.downloadable-file
 
 external-api:
   hansard:
