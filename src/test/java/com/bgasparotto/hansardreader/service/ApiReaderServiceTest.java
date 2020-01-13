@@ -26,10 +26,10 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withStatus;
 
 @SpringBootTest
-public class HansardConsumerServiceTest {
+public class ApiReaderServiceTest {
 
     @Autowired
-    private HansardConsumerService service;
+    private ApiReaderService service;
 
     @Autowired
     private RestTemplate restTemplate;

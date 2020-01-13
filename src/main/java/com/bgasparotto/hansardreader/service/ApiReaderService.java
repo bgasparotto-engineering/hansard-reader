@@ -13,7 +13,7 @@ import java.net.URI;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class HansardConsumerService {
+public class ApiReaderService {
     private final RestTemplate restTemplate;
 
     @Value("${external-api.hansard.uri}")
