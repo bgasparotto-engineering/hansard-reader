@@ -13,7 +13,7 @@ external-api:
     feed:
       path: /resources/files/feed
       dataset: 12
-      take: all
+      take: 5 # number of days to consume from or <all> to read everything (from the last 5 years).
 
 spring:
   datasource:
