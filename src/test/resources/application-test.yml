@@ -1,3 +1,8 @@
 spring:
   kafka:
     bootstrap-servers: ${spring.embedded.kafka.brokers}
+
+external-api:
+  hansard:
+    feed:
+      take: all
