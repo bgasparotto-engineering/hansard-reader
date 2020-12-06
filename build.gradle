@@ -38,14 +38,18 @@ dependencies {
     implementation 'io.confluent:kafka-avro-serializer:5.3.1'
     implementation 'io.confluent:kafka-streams-avro-serde:5.3.1'
 
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'commons-io:commons-io:2.6'
+
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
     testImplementation 'org.springframework.kafka:spring-kafka-test'
+    testImplementation 'org.assertj:assertj-core:3.14.0'
 }
 
 test {
